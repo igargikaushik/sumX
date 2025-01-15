@@ -1,0 +1,154 @@
+body { 
+  font-family: 'Roboto', sans-serif;  
+  padding: 10px;
+  width: 600px; 
+  height: 100%; 
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;  
+  overflow: hidden; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  
+
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: flex-start; 
+  height: 100%;  
+  gap: 20px; 
+  box-sizing: border-box;
+  border-radius: 10px;  
+  overflow: hidden; 
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-size: 1.75em;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 555px;  
+  height: 120px;  
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+#summary {
+  margin-top: 10px;
+  padding: 20px;  
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-height: 120px;  
+  min-width: 300px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  width: 100%;  
+  max-height: 300px; 
+  overflow-y: auto;  
+  font-size: 16px; 
+
+}
+
+/* General Button Style*/
+button {
+  width: 100%;  
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+  transform: scale(0.98);
+}
+
+/* Summarize Button */
+#summarizeBtn {
+  background-color: #3498db;
+  font-weight: bold;  
+}
+
+#summarizeBtn:hover {
+  background-color: #2980b9;
+}
+
+#summarizeBtn:active {
+  background-color: #1c5987;
+}
+
+#summarizeBtn {
+  padding: 14px;
+  font-size: 18px; 
+}
+
+/* Generate Citation Button */
+#generateCitation {
+  background-color: #3498db;
+  font-weight: bold;  
+}
+
+#generateCitation:hover {
+  background-color: #1c5987;
+}
+
+#generateCitation:active {
+  background-color: #1c5987;
+}
+
+#clearBtn {
+  width: 45%; 
+  padding: 12px;
+  background-color:  #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#clearBtn:hover {
+  background-color: #16a085;
+}
+
+#clearBtn:active {
+  background-color: #16a085;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

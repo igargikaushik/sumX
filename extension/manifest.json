@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "SumX-Research Assistant",
+    "version": "1.0",
+    "description": "Summarize articles, highlight keywords, and generate citations.",
+
+    "permissions": ["activeTab", 
+                "storage",
+              "http://127.0.0.1:5000/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "host_permissions": [
+      "http://127.0.0.1:5000/*" 
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"], 
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

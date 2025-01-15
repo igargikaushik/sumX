@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <h2>SumX - Research Assistant</h2>
+
+    <div class="input-section">
+      <textarea id="inputText" placeholder="Paste the article text here..."></textarea>
+      <button id="summarizeBtn" class="btn">Summarize</button>
+    </div>
+
+    <div class="output-section">
+      <h3>Summary:</h3>
+      <div id="summary" class="summary-output"></div>
+
+
+      <h3>Citation:</h3>
+      <div id="citation" class="citation-output"></div>
+      <button id="generateCitation" class="btn">Generate Citation</button>
+    </div>
+
+    <button id="clearBtn" class="btn">Clear</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
