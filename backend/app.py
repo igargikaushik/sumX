@@ -63,10 +63,13 @@ def generate_citation():
         return jsonify({"error": str(e)}), 500
 
 def generate_citation_from_summary(summary):
+    title = " ".join(summary.split()[:3])  
+
+
     citation_info = {
-        "author": "",  
-        "title": summary.split("\n")[0], 
-        "year": ""  
+        "author": "Not enough or appropriate data for author", 
+        "title": title, 
+        "year": "or year"  
     }
     return citation_info
     
