@@ -18,7 +18,7 @@ Activate the environment:
   Copy code
   source venv/bin/activate
  
-3.** Install Dependencies**
+3.**Install Dependencies**
 
 bash-
 Copy code
