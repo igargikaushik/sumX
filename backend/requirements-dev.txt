@@ -1,0 +1,3 @@
+#for local development
+pywin32==306
+pywinpty==2.0.13
