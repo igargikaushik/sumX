@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         summarizeBtn.textContent = 'Summarizing...';
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/summarize', {
+            const response = await fetch('https://sumx.onrender.com/summarize', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         citationOutput.textContent = 'Generating citation...';
 
         try {
-            const citationResponse = await fetch('http://localhost:5000/generate-citation', {
+            const citationResponse = await fetch('https://sumx.onrender.com/generate-citation', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
