@@ -9,6 +9,10 @@ Summarize articles, highlight keywords, and generate citations using AI -Chrome 
 #### popup frontend:
 https://sum-x.netlify.app/
 
+#### backend:
+https://sumx.onrender.com
+
+
 ### add extension to your browser:
 https://github.com/igargikaushik/SumX/blob/main/backend/readme.md
 
